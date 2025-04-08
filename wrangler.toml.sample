@@ -1,0 +1,17 @@
+name = "mail-proxy-worker"
+main = "src/index.ts"
+compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2025-03-28"
+routes = [
+  { pattern = "mail-proxy-worker.workers.dev", custom_domain = true }
+]
+
+[vars]
+API_EMAIL = "sender@example.com"
+API_KEY = "[EMAIL_APP_PASSWORD]"
+API_HOST = "smtp.exmail.qq.com"
+API_PORT = 465
+CF_TSKEY = "[TURNSTILE_KEY]"
+FB_HOST = "https://api.formbee.dev/formbee/[KEY]"
+MSG_SUCCESS = "Thank you for your message! We will get back to you soon."
+DST_EMAIL = "recipient@example.com"

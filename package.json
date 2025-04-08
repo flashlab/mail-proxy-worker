@@ -1,0 +1,31 @@
+{
+  "name": "mail-cf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "private mail by worker-mailer",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "cf-typegen": "wrangler types",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/flashlab/mail-proxy-worker.git"
+  },
+  "author": "flashlab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flashlab/mail-proxy-worker/issues"
+  },
+  "homepage": "https://github.com/flashlab/mail-proxy-worker#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250321.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9",
+    "wrangler": "^4.5.0"
+  },
+  "dependencies": {
+    "worker-mailer": "^1.0.1"
+  }
+}
